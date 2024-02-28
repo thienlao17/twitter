@@ -1,6 +1,8 @@
 import "./globals.css";
 import Sidebar from "./Components/layout/Sidebar";
 import FollowBar from "@/app/Components/layout/FollowBar";
+import LoginModal from "@/app/modals/LoginModal";
+import RegisterModal from "@/app/modals/RegisterModal";
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -9,6 +11,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="h-screen bg-black">
+      <RegisterModal/>
+      <LoginModal/>
         <div className="container h-full mx-auto xl:px-30 max-w-6xl">
           <div className="grid grid-cols-4 h-full">
             <Sidebar/>
