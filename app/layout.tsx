@@ -3,6 +3,8 @@ import Sidebar from "./Components/layout/Sidebar";
 import FollowBar from "@/app/Components/layout/FollowBar";
 import LoginModal from "@/app/modals/LoginModal";
 import RegisterModal from "@/app/modals/RegisterModal";
+import {Toaster} from "react-hot-toast";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -11,6 +13,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="h-screen bg-black">
+      <Toaster/>
       <RegisterModal/>
       <LoginModal/>
         <div className="container h-full mx-auto xl:px-30 max-w-6xl">

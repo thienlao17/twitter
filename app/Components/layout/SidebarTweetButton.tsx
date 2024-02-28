@@ -1,6 +1,5 @@
 "use client"
 
-import {useRouter} from "next/navigation";
 import {FaFeather} from "react-icons/fa";
 import {useCallback} from "react";
 import useLoginModal from "@/hooks/UseLoginModal";
